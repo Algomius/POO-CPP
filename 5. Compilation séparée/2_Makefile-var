@@ -1,0 +1,19 @@
+objects = Salarie.o Fournisseur.o Client.o Personne.o main.o
+
+pers.exe : $(objects)
+	g++ $(objects) -o pers.exe
+
+Salarie.o : Salarie.cpp Salarie.h Personne.h
+	g++ -c Salarie.cpp
+Fournisseur.o : Fournisseur.cpp Fournisseur.h Personne.h
+	g++ -c Fournisseur.cpp
+Client.o : Client.cpp Client.h Personne.h
+	g++ -c Client.cpp
+Personne.o : Personne.cpp Personne.h
+	g++ -c Personne.cpp
+main.o : main.cpp Salarie.h Fournisseur.h  Client.h Personne.h
+	g++ -c main.cpp
+
+
+clean :
+	del *.o
