@@ -11,6 +11,7 @@ class Salarie : public Personne {
         Salarie(string n, string p, int a, int niv);
 
         void affichage() override;
+        ~Salarie();
 };
 
 #endif

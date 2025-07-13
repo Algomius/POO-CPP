@@ -8,3 +8,7 @@ void Fournisseur::affichage() {
     Personne::affichage();
     cout << "Mon telephone est : " << telephone << endl; 
 }
+
+Fournisseur::~Fournisseur() {
+    cout << "Je suis dans le destructeur fournisseur" << endl;
+} 

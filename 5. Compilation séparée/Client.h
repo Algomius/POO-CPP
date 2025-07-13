@@ -10,6 +10,7 @@ class Client : public Personne {
     public :
         Client(string n, string p, int a, string adr);
         void affichage() override;
+        ~Client();
 };
 
 #endif

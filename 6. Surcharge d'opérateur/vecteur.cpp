@@ -25,10 +25,10 @@ class Vecteur {
         return y;
     }
 
-    /*void operator+(Vecteur v) {
+    void operator+=(Vecteur v) {
         x += v.x;
         y += v.y;
-    } */
+    } 
 
     Vecteur operator+(Vecteur v) {
         Vecteur v1 {x + v.x, y+ v.y};

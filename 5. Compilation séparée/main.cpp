@@ -16,8 +16,8 @@ int main() {
     c.affichage(); */
 
     Fournisseur *f = new Fournisseur ("Marley", "Bob", 54, "0102030405");
-    Client *c = new Client ("Marley", "Bob", 54, "Rue de la paix");
-    Salarie *s = new Salarie ("Marley", "Bob", 54, 2);
+    Client *c = new Client ("Big", "Jim", 54, "Rue de la paix");
+    Salarie *s = new Salarie ("Doe", "John", 54, 2);
 
     vector<Personne *> v;
     v.push_back(f);
@@ -28,8 +28,7 @@ int main() {
         i->affichage();
     }
 
-
-
-
-
+    delete f;
+    delete c;
+    delete s;
 }

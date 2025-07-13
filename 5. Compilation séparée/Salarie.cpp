@@ -9,3 +9,8 @@ void Salarie::affichage() {
     Personne::affichage();
     cout << "Mon niveau est : " << niveau << endl; 
 }
+
+Salarie::~Salarie() {
+    cout << "Je suis dans le destructeur salarie" << endl;
+} 
+

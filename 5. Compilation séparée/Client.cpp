@@ -8,3 +8,7 @@ void Client::affichage() {
     Personne::affichage();
     cout << "Mon adresse est : " << adresse << endl; 
 }
+
+Client::~Client() {
+    cout << "Je suis dans le destructeur client" << endl;
+} 

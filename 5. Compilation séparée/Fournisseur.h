@@ -10,6 +10,7 @@ class Fournisseur : public Personne {
     public :
         Fournisseur(string n, string p, int a, string tel);
         void affichage() override;
+        ~Fournisseur();
 };
 
 #endif
